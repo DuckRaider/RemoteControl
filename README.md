@@ -3,9 +3,9 @@
 Remote Control is a **Windows Forms** application which enables you to control an external device through **emails**. The window is minimized and does not appear in the taskbar to prevent unnecessary distraction (definitly not to hide the possible virus from the victim). After starting the executable file (.exe) for the first time, Remote Control will **run automatically** at startup.
 ## **Instruction**
 ### **Change Sender Email**
-The sender email sends commands to `guidomobil200@gmail.com`, the receiver email. It's a publicly accessible email provided by myself (be aware that multiple users could use the same receiver which might cause a mixing of data traffic. I recommend to create an own **GMAIL (!)** for your personal usage). You have to change **line 51**:
+The sender email sends commands to `guidomobil200@gmail.com`, the receiver email. It's a publicly accessible email provided by myself (be aware that multiple users could use the same receiver which might cause a mixing of data traffic. I recommend to create an own **GMAIL (!)** for your personal usage). You have to change **line 50**:
 ```cs
-emailMessage.To.Add(new MailboxAddress("Your Name", "yourEmail@gmail.com"));
+emailMessage.From.Add(new MailboxAddress("Your Name", "yourEmail@gmail.com"));
 ```
 
 ### **Send commands**
