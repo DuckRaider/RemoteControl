@@ -9,7 +9,7 @@ emailMessage.From.Add(new MailboxAddress("Your Name", "yourEmail@gmail.com"));
 ```
 Changte the sender email in **line 51**:
 ```cs
-emailMessage.From.Add(new MailboxAddress("Your Name", "yourEmail@gmail.com"));
+emailMessage.To.Add(new MailboxAddress("Your Name", "yourEmail@gmail.com"));
 ```
 ### **Send commands**
 After starting the program, `guidomobil200@gmail.com` will respond to following commands:
